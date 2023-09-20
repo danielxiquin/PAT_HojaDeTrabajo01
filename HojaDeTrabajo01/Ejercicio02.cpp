@@ -2,5 +2,18 @@
 
 bool Ejercicio02::isPalindrome(string& s)
 {
-    return false;
+
+    int left = 0;
+    int right = s.size() - 1;
+
+    while (left < right) {
+        if (s[left] != s[right]) {
+            return false;
+        }
+        left++;
+        right--;
+    }
+    
+
+    return true;
 }
